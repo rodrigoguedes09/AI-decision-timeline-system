@@ -255,33 +255,6 @@ Steps are visually differentiated:
 
 ---
 
-##  Why This Matters
-
-### For Engineers
-- Debug AI system behavior
-- Audit decision logic
-- Track confidence over time
-- Identify where rules vs. LLMs are used
-
-### For Product Teams
-- Understand user-facing decisions
-- Validate business logic
-- Improve AI reliability
-- Document decision rationale
-
-### For Compliance & Auditing
-- Trace decisions back to source data
-- Prove fairness and consistency
-- Demonstrate explainability
-- Meet regulatory requirements
-
-### For Recruiters & Non-Technical Users
-- See AI in action without reading code
-- Understand system behavior visually
-- Appreciate the complexity of AI decision-making
-
----
-
 ##  Project Structure
 
 ```
