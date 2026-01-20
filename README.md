@@ -31,12 +31,15 @@ Each decision is broken into clear stages:
 
 You can **replay any decision step-by-step**, like debugging code or watching a video frame-by-frame.
 
----
+**Main screen of the application:**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e2a824f9-5168-4913-a852-cb5535cf894f" width="800" />
+</p>
 
-##  Demo
-
-![Timeline Demo](docs/demo.gif)
-*↑ A decision being replayed in real-time*
+**"Replay Decision"** - Analysing Model decisions and data:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9294a35a-2f17-46ff-98ba-58b74d96fb95" width="800" />
+</p>
 
 ---
 
