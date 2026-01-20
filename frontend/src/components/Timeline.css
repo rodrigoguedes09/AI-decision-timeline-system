@@ -1,0 +1,129 @@
+.timeline-container {
+  margin-top: 1.5rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  padding: 0 0.5rem;
+}
+
+.timeline-header h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.decision-count {
+  background: rgba(59, 130, 246, 0.1);
+  padding: 0.625rem 1.25rem;
+  border-radius: 24px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-input);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.timeline {
+  position: relative;
+  padding-left: 3rem;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, 
+    var(--color-input) 0%,
+    var(--color-reasoning) 25%,
+    var(--color-decision-approve) 50%,
+    var(--color-action) 75%,
+    var(--color-outcome) 100%
+  );
+  opacity: 0.4;
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -1.5rem;
+  top: 1.5rem;
+  width: 12px;
+  height: 12px;
+  background: var(--color-input);
+  border: 3px solid var(--background);
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+}
+
+.timeline-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.empty-state {
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.empty-state h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.empty-state p {
+  margin-bottom: 1rem;
+}
+
+.empty-state code {
+  display: inline-block;
+  background: var(--surface);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+  color: var(--color-input);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 1.5rem;
+  }
+  
+  .timeline-line {
+    left: 11px;
+  }
+  
+  .timeline-marker {
+    left: -1.25rem;
+  }
+}

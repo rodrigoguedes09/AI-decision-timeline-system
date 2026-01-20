@@ -1,0 +1,97 @@
+.filter-bar {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--surface);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 150px;
+}
+
+.filter-group.search-group {
+  flex: 2;
+  min-width: 250px;
+}
+
+.filter-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.filter-group select,
+.filter-group input.search-input {
+  background: var(--background);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  padding: 0.625rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.filter-group select {
+  cursor: pointer;
+}
+
+.filter-group input.search-input {
+  width: 100%;
+}
+
+.filter-group input.search-input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.6;
+}
+
+.filter-group select:hover,
+.filter-group input.search-input:hover {
+  border-color: var(--color-input);
+}
+
+.filter-group select:focus,
+.filter-group input.search-input:focus {
+  outline: none;
+  border-color: var(--color-input);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.reset-button {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 0.625rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.reset-button:hover {
+  background: var(--background);
+  border-color: var(--color-input);
+  color: var(--color-input);
+}
+
+@media (max-width: 768px) {
+  .filter-bar {
+    flex-direction: column;
+  }
+  
+  .filter-group {
+    width: 100%;
+  }
+  
+  .reset-button {
+    width: 100%;
+  }
+}
