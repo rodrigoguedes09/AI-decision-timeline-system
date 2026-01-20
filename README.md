@@ -358,44 +358,9 @@ GET /api/decisions/{decision_id}/replay
 
 ---
 
-##  Roadmap
-
-- [x] Core decision trace model
-- [x] REST API
-- [x] Timeline visualization
-- [x] Replay mode
-- [x] Demo data
-- [ ] Real-time updates (WebSockets)
-- [ ] Decision comparison view
-- [ ] Export to PDF/JSON
-- [ ] Integration with LLM providers (OpenAI, Anthropic)
-- [ ] Analytics dashboard
-
----
-
-##  Contributing
-
-Contributions are welcome! This project demonstrates:
-- Clean architecture
-- Strong typing
-- Modular design
-- Visual storytelling
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
----
-
 ##  License
 
 MIT License - see [LICENSE](LICENSE) for details.
-
----
-
-##  Acknowledgments
-
-Built to solve a real problem: **making AI behavior understandable**.
-
-This is not a toy project—it's a pattern that should exist in production AI systems.
 
 ---
 
